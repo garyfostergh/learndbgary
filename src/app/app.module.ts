@@ -1,3 +1,4 @@
+import { UserService } from './shared/user.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
@@ -16,8 +17,8 @@ var config = {
 };
 
 const authConfig = {
-  method: AuthMethods.Redirect,
-  provider: AuthProviders.Google
+  provider: AuthProviders.Google,
+  method: AuthMethods.Redirect
 };
 
 @NgModule({
@@ -31,7 +32,7 @@ const authConfig = {
     AngularFireModule.initializeApp(config, authConfig),
     HttpModule
   ],
-  providers: [],
+  providers: [UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -2,5 +2,13 @@
   <h3>
     {{title}}
   </h3>
-  <button md-icon-button><md-icon>person</md-icon></button>
-</md-toolbar>  
+
+  <div *ngIf="!user.uid">
+    <button md-icon-button mdTooltip="Login" (click)="login()"><md-icon>person</md-icon></button>
+  </div>
+  <div *ngIf="user.uid">
+    <button md-icon-button class="profile-button" mdTooltip="Logout" (click)="logout()">
+      <img class="userimg" src="{{user.photoURL}}">
+    </button>
+  </div>
+</md-toolbar>
