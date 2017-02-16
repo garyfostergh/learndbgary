@@ -1,6 +1,36 @@
 {
+    "items": {
+        "1002001": {
+            "description": "MtDew",
+            "manpartno": "MtDew",
+            "onHand": 40
+        },
+        "1002002": {
+            "description": "Regular Pepsi",
+            "manpartno": "Pepsi",
+            "onHand": 44
+        },
+        "1002003": {
+            "description": "Diet Pepsi",
+            "manpartno": "PepsiDiet",
+            "onHand": 100
+        },
+        "1002004": {
+            "description": "Lemon Pepsi",
+            "manpartno": "PepsiLemon",
+            "onHand": 3
+        },
+        "1002005": {
+            "description": "Sprite",
+            "manpartno": "Sprite",
+            "onHand": 20
+        }
+    },
     "transactions": {
         "1001": {
+            "register": 1,
+            "datetime": "string",
+            "txno": 1005,
             "lines": {
                 "1001": {
                     "item": {
