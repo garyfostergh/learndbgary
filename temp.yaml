@@ -1,0 +1,29 @@
+{
+    "transactions": {
+        "1001": {
+            "lines": {
+                "1001": {
+                    "item": {
+                        "sku": 1002001,
+                        "description": "MtDew",
+                        "planogram": {
+                            "name": "Drink-a-gon",
+                            "location": "backroom",
+                            "seqnum": 14
+                        }
+                    },
+                    "discounts": {
+                        "1": {
+                            "amount": 1,
+                            "type": "employee"
+                        },
+                        "2": {
+                            "amount": 0.5,
+                            "type": "Buy one get one"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+<md-toolbar>
+  <button md-button (click)="test1()">Test 1</button>
+  <button md-button (click)="test2()">Test 2</button>
+  <button md-button (click)="test3()">Test 3</button>
+  <button md-button (click)="test4()">Test 4</button>
+  <button md-button (click)="test5()">Test 5</button>
+  <button md-button (click)="test6()">Test 6</button>
+</md-toolbar>
+
+
+<h3>Select Data</h3>
+<md-card>
+  <prettyjson [obj]="selectData"></prettyjson>
+</md-card>
+
+
+<h3>All Data</h3>
+<md-card>
+  <prettyjson [obj]="allData"></prettyjson>
+</md-card>

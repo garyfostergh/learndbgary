@@ -6,8 +6,10 @@ import { HttpModule } from '@angular/http';
 import { MaterialModule } from '@angular/material';
 import 'hammerjs';
 import { AngularFireModule, AuthMethods, AuthProviders } from 'angularfire2';
+import { PrettyJsonModule, PrettyJsonPipe, SafeJsonPipe } from 'angular2-prettyjson';
 
 import { AppComponent } from './app.component';
+import { FirebasePlayComponent } from './firebase-play/firebase-play.component';
 var config = {
   apiKey: "AIzaSyAMLD1D6GQQ3gy9_hcwGa9UUkkAYPSzFl8",
   authDomain: "learndb-tolga.firebaseapp.com",
@@ -23,16 +25,18 @@ const authConfig = {
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FirebasePlayComponent
   ],
   imports: [
+    PrettyJsonModule,
     BrowserModule,
     FormsModule,
     MaterialModule.forRoot(),
     AngularFireModule.initializeApp(config, authConfig),
     HttpModule
   ],
-  providers: [UserService],
+  providers: [UserService, { provide: PrettyJsonPipe, useClass: SafeJsonPipe }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
