@@ -1,9 +1,12 @@
 <md-toolbar>
   <button md-button (click)="test1()">Test 1</button>
-  <button md-button (click)="test2()">Test 2</button>
-  <button md-button (click)="test3()">Test 3</button>
-  <button md-button (click)="test4()">Test 4</button>
+  <button md-button (click)="createCategory()">Category</button>
+  <button md-button (click)="subject()">Subject</button>
+  <button md-button (click)="data()">Data
+
+  </button>
   <button md-button (click)="test5()">Test 5</button>
+  <button md-button (click)="remove()">Remove</button>
 </md-toolbar>
 
 
@@ -15,5 +18,6 @@
 
 <h3>All Data</h3>
 <md-card>
-  <prettyjson [obj]="allData"></prettyjson>
+  <!--<prettyjson [obj]="allData"></prettyjson>-->
+ <pre> {{allData | json}}</pre>
 </md-card>

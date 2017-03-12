@@ -9,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class AppComponent  implements OnInit {
-  title = 'LearnDB-Tolga';
+  title = 'LearnDB-Gary  fred';
   user: User;
 
   constructor(private userService: UserService) { }

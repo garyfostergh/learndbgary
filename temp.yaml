@@ -1,59 +1,191 @@
+cycleCountView:
+    cycleCount1001:
+        cycleCountLines:
+            Line1001:
+                item:
+                    sku: 10020004
+                    description: MtDew
+                    onHand: 40
+
+gary:
+    'no1':
+        category: fun stuff
+        problem: fun stuff is not fun
+        solutiion: get new fun stuff
+     'no2':
+        category: fun stuff
+        problem: i have no fun stuff
+        solutiion: get some fun stuff
+     'no3':
+        category: fun stuff
+        problem: need more fun stuff
+        solutiion: get more fun stuff
+      'no4':
+        category: angular learning
+        problem: need to learn more
+        solutiion: stop whining and do it
+
+gary:
+    '1001':
+        category: fishing
+            '1001':
+                item:
+                    problem: line snagged
+                    solution: cut line
+      '1002':
+        category: fishing
+            '1002':
+                item:
+                    problem: fish too big
+                    solution: catch smaller fish        
+
+gary:
+    '1001':
+        category: fishing
+        problem: line snagged
+        solution: cut line
+     '1002':
+        category: fishing
+            '1002':
+                item:
+                    problem: fish too big
+                    solution: catch smaller fish        
+
+
 {
-    "items": {
-        "1002001": {
-            "description": "MtDew",
-            "manpartno": "MtDew",
-            "onHand": 40
-        },
-        "1002002": {
-            "description": "Regular Pepsi",
-            "manpartno": "Pepsi",
-            "onHand": 44
-        },
-        "1002003": {
-            "description": "Diet Pepsi",
-            "manpartno": "PepsiDiet",
-            "onHand": 100
-        },
-        "1002004": {
-            "description": "Lemon Pepsi",
-            "manpartno": "PepsiLemon",
-            "onHand": 3
-        },
-        "1002005": {
-            "description": "Sprite",
-            "manpartno": "Sprite",
-            "onHand": 20
-        }
-    },
-    "transactions": {
+    "users": {
         "1001": {
-            "register": 1,
-            "datetime": "string",
-            "txno": 1005,
-            "lines": {
-                "1001": {
-                    "item": {
-                        "sku": 1002001,
-                        "description": "MtDew",
-                        "planogram": {
-                            "name": "Drink-a-gon",
-                            "location": "backroom",
-                            "seqnum": 14
-                        }
-                    },
-                    "discounts": {
-                        "1": {
-                            "amount": 1,
-                            "type": "employee"
-                        },
-                        "2": {
-                            "amount": 0.5,
-                            "type": "Buy one get one"
-                        }
-                    }
-                }
+            "name": "gary",
+            "categories": {
+                "1001": "sports",
+                "1002": "car",
+                "1003": "school"
             }
         }
     }
+}
+         
+
+
+items:
+    '1002001':
+        description: MtDew
+        manpartno: MtDew
+        onHand: 40
+    '1002002':
+        description: Regular Pepsi
+        manpartno: Pepsi
+        onHand: 44
+    '1002003':
+        description: Diet Pepsi
+        manpartno: PepsiDiet
+        onHand: 100
+    '1002004':
+        description: Lemon Pepsi
+        manpartno: PepsiLemon
+        onHand: 3
+    '1002005':
+        description: Sprite
+        manpartno: Sprite
+        onHand: 20
+    '9002002':
+        description: Regular Pepsi Joe
+        manpartno: Pepsi
+        onHand: 44
+    '9002003':
+        description: Diet Pepsi Fred
+        manpartno: PepsiDiet
+        onHand: 100
+transactions:
+    '1001':
+        register: 1
+        datetime: string
+        txno: 1005
+        lines:
+            '1001':
+                item:
+                    sku: 1002001
+                    description: MtDew
+                    planogram:
+                        name: Drink-a-gon
+                        location: backroom
+                        seqnum: 14
+                discounts:
+                    '1':
+                        amount: 1
+                        type: employee
+                    '2':
+                        amount: 0.5
+                        type: Buy one get one
+
+transactions:
+
+
+  {
+    "gary": {
+        category: sports
+    }
+}
+
+    '1001':
+        register: 1
+        datetime: string
+        txno: 1005
+        lines:
+            '1001':
+                item:
+                    sku: 1002001
+                    description: MtDew
+                    planogram:
+                        name: Drink-a-gon
+                        location: backroom
+                        seqnum: 14
+                discounts:
+                    '1':
+                        amount: 1
+                        type: employee
+                    '2':
+                        amount: 0.5
+                        type: Buy one get one
+
+
+gary:
+    '1':
+        category: MtDew
+        problem: fred
+        solution: joey
+    '2':
+        category: MtDew
+        problem: joe
+        solution: chuck
+
+
+user-categories:
+    1001:
+        1001: cars
+        1002: fishing
+        1003: recipes
+
+user-category-subjects:
+    1001:
+        1001:
+            1001: spaghett
+            1002: meatloaf
+            1003: lasagna
+
+user-category-subject-data:
+    1001:
+        1001:
+            1001: noodles sause cheese 
+                        
+                         
+    
+
+
+
+
+
+
+{
+
 }

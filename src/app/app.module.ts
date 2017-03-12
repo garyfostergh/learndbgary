@@ -10,12 +10,12 @@ import { PrettyJsonModule, PrettyJsonPipe, SafeJsonPipe } from 'angular2-prettyj
 
 import { AppComponent } from './app.component';
 import { FirebasePlayComponent } from './firebase-play/firebase-play.component';
-var config = {
-  apiKey: "AIzaSyAMLD1D6GQQ3gy9_hcwGa9UUkkAYPSzFl8",
-  authDomain: "learndb-tolga.firebaseapp.com",
-  databaseURL: "https://learndb-tolga.firebaseio.com",
-  storageBucket: "learndb-tolga.appspot.com",
-  messagingSenderId: "692251656873"
+var config = {  
+    apiKey: "AIzaSyBAoXi4s33rPOfelSUH_qE5r4Wy1wLLS4U",
+    authDomain: "learndb-gary.firebaseapp.com",
+    databaseURL: "https://learndb-gary.firebaseio.com",
+    storageBucket: "learndb-gary.appspot.com",
+    messagingSenderId: "732844936598"
 };
 
 const authConfig = {
