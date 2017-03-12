@@ -82,7 +82,7 @@ export class FirebasePlayComponent implements OnInit {
         await subjects.push(`${this.subjectData}`);
         this.subjectData = "meatloaf";
         await subjects.push(`${this.subjectData}`);
-        this.subjectData = "lasagna";
+        this.subjectData = "pasta";
         const subjectpush = subjects.push(`${this.subjectData}`); 
         this.subjectKey = subjectpush.key;
         await subjectpush;
