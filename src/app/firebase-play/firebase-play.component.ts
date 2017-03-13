@@ -11,13 +11,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirebasePlayComponent implements OnInit {
     allData;
-    selectData;
-    
+    selectData;    
     topNode: string   = "users";
     category   = {data: '', key: ''};
     subjectData: string;
     subjectKey: string;
-
     contentData;
 
     constructor(private af: AngularFire, private userService: UserService) {
